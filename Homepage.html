@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>KimSangBum Homepage</title>
+	<link type="text/css" rel="stylesheet" href="./static/css/homepage.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+	<script type = "text/javascript" src="./static/js/homepage.js"></script>
+	
+	<!-- flip clock -->
+	<link rel="stylesheet" href="./static/css/flipclock.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="./static/js/flipclock.js"></script>	
+	<!-- //flip clock -->
+
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+</script>
+<div class="fb-like" data-href="http://www.kimsangbum.com" data-width="450" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+<div class ="me" id="test01"><br/>About me
+	<ul>
+		<li>김상범</li>
+		<li>26세</li>
+		<li>남자</li>
+		<li>중앙대학교</li>
+		<li>강동구 명일동</li>
+	</ul>
+	<table class="namecard">
+		<tr>
+			<td class="namecardin">
+				<div id="my img" style="width: 130px;">
+					<a href="http://www.kimsangbum.com">
+						<img src="https://lh5.googleusercontent.com/-BbC8ggdQYBM/AAAAAAAAAAI/AAAAAAAAAAA/UKU2sdyjEOk/photo.jpg?sz=120" />
+					</a>
+				</div>
+			</td>
+			<td>
+				<div  id="profile" style="width: 250px;">
+					<p> Name : KimSangBum</p>
+					<p> School : Chung-Ang</p>
+					<p>E-mail : ksb5529@naver.com</p>
+					<p>Homepage : Click my photo.</p>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="project" id="test02"><br/>My project
+	<ol>
+		<li>온라인 투표 시스템</li>
+		<li>식당 / 지하철 사람분포</li>
+		<li>쿠폰 시스템</li>
+		<li>금융 시스템 게임처럼 단순화</li>
+		<li>윈도우 창 투명화 조절</li>
+		<li>강의실 실시간 피드백 시스템</li>
+		<li>아이디어 마켓</li>
+		<li>연락 횟수 알림</li>
+		<li>핸드폰 사용량제한</li>
+		<li>온라인 반상회 게시판</li>
+		<li>학교 가정통신문 서비스</li>
+		<li>웹페이지 흐르기 기술</li>
+		<li>전국 식당 음식물 버리기 방지 웹</li>
+		<li>미용실 고객관리 시스템</li>
+	</ol>
+</div>
+<!-- flip clock -->
+<div class="clock" style="margin:2em;"></div>
+
+<script type="text/javascript">
+var clock;
+
+$(document).ready(function() {
+	clock = $('.clock').FlipClock({
+		clockFace: 'TwelveHourClock'
+	});
+});
+</script>
+<!-- //flip clock -->
+</body>
+</html>
